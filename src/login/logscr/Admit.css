@@ -1,0 +1,62 @@
+*{
+    
+}
+.opip{
+    background-color: white;
+}
+body{
+    background-color: white;
+    padding: 10px;
+}
+
+.heading{
+    text-align:center;
+}
+p{
+    font: size 20px; ;
+    padding: 10px;
+}
+table {
+    width: 100%;
+    padding: 10px;
+}
+table {
+   width: auto;
+   padding: 10px;
+    margin-right: 0px;
+}
+table, th, td {
+    text-align: center;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+  th, td {
+    background-color: #96D4D4;
+    padding: 10px;
+  }
+.sign{
+    text-align: right;
+}
+pre{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;padding: 10px;
+}
+.rules{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: 400 ;
+    font-size: 30px;padding: 10px;
+}
+.fount{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.up-img{
+    position: absolute;
+    margin-left: 76%;
+}
+.img2{
+    position: absolute;
+    margin-left: 85%;
+    margin-top: -80px;
+}

@@ -1,0 +1,114 @@
+.box {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.767);
+  position: absolute;
+  display: flex;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.nave {
+  position: absolute;
+  align-items: center;
+  max-width: 100%;
+  max-height: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 24, 51, 0.982);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.but1 {
+  margin-top: 1%;
+  padding: 10px;
+  margin-left: 1%;
+  border-radius: 8px;
+ background-color: rgba(175, 202, 207, 0.895);
+}
+.but2 {
+  padding: 10px;
+  margin-top: 1%;
+  float: right;
+  border-radius: 8px;
+  background-color: darkkhaki;
+}
+@media (max-width:494px) and (min-width:300px)
+{
+  .but1 {
+    font-size: 8px;
+    margin-top: 1%;
+    padding: 5px;
+    margin-left: 1%;
+    border-radius: 4px;
+   background-color: rgba(175, 202, 207, 0.895);
+  }
+  .but2 {
+    font-size: 8px;
+    padding: 5px;
+    margin-top: 1%;
+    float: right;
+    border-radius: 4px;
+    background-color: darkkhaki;
+  }
+}
+
+@media (max-width:579px) and (min-width:300px)
+{
+  .but1 {
+    font-size: 15px;
+    margin-top: 1%;
+    padding: 5px;
+    margin-left: 1%;
+    border-radius: 4px;
+   background-color: rgba(175, 202, 207, 0.895);
+  }
+  .but2 {
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 1%;
+    float: right;
+    border-radius: 4px;
+    background-color: darkkhaki;
+  }
+}
+@media (max-width:780px) and (min-width:579px)
+{
+  .but1 {
+    margin-top: 1%;
+    padding: 10px;
+    margin-left: 1%;
+    border-radius: 8px;
+   background-color: rgba(175, 202, 207, 0.895);
+  }
+  .but2 {
+    margin-top: 1%;
+    padding: 10px;
+    float: right;
+    border-radius: 8px;
+    background-color: darkkhaki;
+  }
+}
+@media  (min-width:720px)
+{
+  .but1 {
+    font-size: 20px;
+    margin-top: 1%;
+    padding: 15px;
+    margin-left: 1%;
+    border-radius: 8px;
+   background-color: rgba(175, 202, 207, 0.895);
+  }
+  .but2 {
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 1%;
+    float: right;
+    border-radius: 8px;
+    background-color: darkkhaki;
+  }
+}

@@ -1,0 +1,196 @@
+
+@media(min-width:1080px)
+{
+    .admission{
+        position: absolute;
+        margin-top: 12%;
+        width: 270px;
+   
+    }
+    .fullname{
+        position: absolute;
+        margin-top: 12%; 
+        margin-left: 30%;
+        width: 270px;
+    }
+    .universityroll{
+        position: absolute;
+        margin-top: 12%;
+        margin-left: 60%;
+        width: 350px;
+    }
+    .sectionrollno{
+        position: absolute;
+        margin-top: 18%;
+        width: 300px;
+    }
+    .fathername{
+        position: absolute;
+        margin-top: 18%;
+        margin-left: 30%;
+        width: 380px;
+    }
+    .semester{
+        position: absolute;
+        margin-top: 18%;
+        margin-left: 60%;
+        width: 380px;  
+    }
+    .Gender{
+        position: absolute;
+        margin-top: 24%;
+        width: 380px;  
+    }
+    .Email{
+        position: absolute;
+        margin-top: 24%;
+        margin-left: 30%;
+        width: 300px;
+    }
+    .Address1{
+        position: absolute;
+        margin-top: 24%;
+        margin-left: 60%;
+        width: 400px;
+    }
+    .Address2{
+        position: absolute;
+        margin-top: 30%;
+        width: 400px;
+    }
+    .City{
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 30%;
+        width: 240px;
+    }
+    .States{
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 60%;
+        width: 290px; 
+    }
+    .Branch{
+        position: absolute;
+        margin-top: 36%;
+        width: 380px;
+    }
+    .Zip-Code{
+        position: absolute;
+        margin-top: 36%;
+        margin-left: 60%;
+        width: 240px;
+    }
+    .next{
+        position: absolute;
+        margin-top: 38%;
+        margin-left: 34%;
+    }
+    .form-check-label{
+        position: absolute;
+        margin-top: 40%;
+        margin-left: 1%;
+    }
+}
+@media(min-width:400px) and (max-width:720px)
+{
+    .admission{
+        position: absolute;
+        margin-top: 15%;
+        width: 200px;
+        margin-left: -50px;
+   
+    }
+   .input-group-text{
+    font-size: 10px;
+   }
+    .fullname{
+        position: absolute;
+        margin-top: 15%;
+        width: 200px;
+        margin-left: 24%;
+    }
+   
+    .form-control{
+        font-size: 10px;
+    }
+    .universityroll{
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 55%;
+        width: 200px;
+    }
+    .sectionrollno{
+        position: absolute;
+        margin-top: 18%;
+        width: 300px;
+    }
+    .fathername{
+        position: absolute;
+        margin-top: 18%;
+        margin-left: 30%;
+        width: 380px;
+    }
+    .semester{
+        position: absolute;
+        margin-top: 18%;
+        margin-left: 60%;
+        width: 380px;  
+    }
+    .Gender{
+        position: absolute;
+        margin-top: 24%;
+        width: 380px;  
+    }
+    .Email{
+        position: absolute;
+        margin-top: 24%;
+        margin-left: 30%;
+        width: 300px;
+    }
+    .Address1{
+        position: absolute;
+        margin-top: 24%;
+        margin-left: 60%;
+        width: 400px;
+    }
+    .Address2{
+        position: absolute;
+        margin-top: 30%;
+        width: 400px;
+    }
+    .City{
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 30%;
+        width: 240px;
+    }
+    .States{
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 60%;
+        width: 290px; 
+    }
+    .Branch{
+        position: absolute;
+        margin-top: 36%;
+        width: 380px;
+    }
+    .Zip-Code{
+        position: absolute;
+        margin-top: 36%;
+        margin-left: 60%;
+        width: 240px;
+    }
+    .next{
+        position: absolute;
+        margin-top: 38%;
+        margin-left: 34%;
+    }
+    .form-check-label{
+        position: absolute;
+        margin-top: 40%;
+        margin-left: 1%;
+    }
+}
+
