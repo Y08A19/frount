@@ -3,11 +3,12 @@ import Home from "./home"
 import Rgform from "./Rgform";
 import ADhome from "./ADhome "
 import TEChome from "./TEChome "
-
+import Temp from "../src/temp/Temp.jsx"
 import React ,{useState}from "react";
 import  Admit from "./login/Admit.jsx"
 import Fees from "./login/Fees/Fees.jsx";
 import Assign from "./edit/Assign.jsx";
+import Editfees from "./editfees/Fform.jsx"
 
 
 
@@ -33,12 +34,13 @@ function App() {
 imgi=img
 
   }
+  
  
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login  /> } />
+          <Route path="/" element={<Login /> } />
           <Route path="/Home" element={<Home />} />
           <Route path="/adHome" element={<ADhome/>} />
           <Route path="/tecHome" element={<TEChome />} />
@@ -46,6 +48,8 @@ imgi=img
           <Route path="/Admit" element={<Admit ddata={duser} />} />
           <Route path="/Fees" element={<Fees  img1={imgfein1} /> } />
           <Route path="/assign" element={<Assign oppo={imgi}/> } />
+          <Route path="/editfees" element={<Editfees  /> } />
+          <Route path="/feess" element={<Temp /> } />
         </Routes>
       </BrowserRouter>
     </div>
