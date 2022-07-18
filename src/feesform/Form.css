@@ -1,0 +1,91 @@
+.Start{
+    align-content: center;
+    margin-top: 15%;
+    margin-bottom: 20%;
+    margin-left: 35%;
+    margin-right: 20%;
+}
+.Formf{
+    border-radius: 20px;
+    align-content: center;
+    width:500px;
+    height:500px;
+    padding:15px;
+    background-color: rgba(240, 240, 240, 0.7);
+    transition: 0.3s;
+    
+}
+.Formf:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+.StudentID{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: solid;
+    font-style: italic;
+    
+}
+.branch{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: solid;
+    font-style: italic;
+    
+}
+.rolid{margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: solid;
+    font-style: italic;}
+.StudentName{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: solid;
+    font-style: italic;
+}
+
+.Semester{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: solid;
+    font-style: italic;
+}
+
+
+.Registration{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: solid;
+    font-style: italic;
+}
+.Subbttn{
+    margin-top: 3%;
+    text-align: right;
+    text-decoration: underline;
+}
+.AdminG{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: solid;
+    font-style: italic;
+}

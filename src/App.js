@@ -8,7 +8,7 @@ import React ,{useState}from "react";
 import  Admit from "./login/Admit.jsx"
 import Fees from "./login/Fees/Fees.jsx";
 import Assign from "./edit/Assign.jsx";
-import Editfees from "./editfees/Fform.jsx"
+import Editfees from "./feesform/Form.jsx"
 
 
 
@@ -42,14 +42,14 @@ imgi=img
         <Routes>
           <Route path="/" element={<Login /> } />
           <Route path="/Home" element={<Home />} />
-          <Route path="/adHome" element={<ADhome/>} />
-          <Route path="/tecHome" element={<TEChome />} />
+          <Route path="/tecHome" element={<ADhome/>} />
+          <Route path="/adHome" element={<TEChome />} />
           <Route path="/Form" element={<Rgform fdata={form} />} />
           <Route path="/Admit" element={<Admit ddata={duser} />} />
           <Route path="/Fees" element={<Fees  img1={imgfein1} /> } />
           <Route path="/assign" element={<Assign oppo={imgi}/> } />
           <Route path="/editfees" element={<Editfees  /> } />
-          <Route path="/feess" element={<Temp /> } />
+          <Route path="/candad" element={<Temp /> } />
         </Routes>
       </BrowserRouter>
     </div>
