@@ -27,6 +27,8 @@ document.getElementById(event.target.id).addEventListener("keyup", function (key
   {console.log("alpha")
    // alert("you cant enter alpha numaric valu");
     keyb.preventDefault();
+    event.target.value=null;
+
   }else{
     total=total+parseInt(event.target.value)
   }
@@ -58,7 +60,7 @@ function pl(){
 />
 
 {elements.map((value, index) => {
-        return (<div key={index}>enter number <input type="number"onChange={getnum}  id={value} className='numberfield' />
+        return (<div key={index}>enter number <input type="text"onChange={getnum}  id={value} className='numberfield' />
         <br />
         </div>
         )

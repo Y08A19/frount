@@ -37,6 +37,7 @@ document.getElementById(event.target.id).addEventListener("keyup", function (key
   {console.log("alpha")
    // alert("you cant enter alpha numaric valu");
     keyb.preventDefault();
+    event.target.value=null;
   }else{
     total=total+parseInt(event.target.value)
   }
