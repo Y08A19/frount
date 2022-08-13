@@ -1,15 +1,9 @@
 import React from "react";
 import "./Form.css";
-import {
-  adminid,
-  sname,
-  urollno,
-  branch,
-  sem,
-} from "../temp/Temp";
+import { adminid, sname, urollno, branch, sem } from "../student-fees/StudentFees";
+export var isfees;
 export default function Form() {
   return (
-    // Form begins here
     <div className="Start">
       <div className="Formf">
         <form>

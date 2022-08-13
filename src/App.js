@@ -3,13 +3,14 @@ import Home from "./home"
 import Rgform from "./Rgform";
 import ADhome from "./ADhome "
 import TEChome from "./TEChome "
-import Temp from "../src/temp/Temp.jsx"
+import StudentFees from "./student-fees/StudentFees.jsx"
 import React ,{useState}from "react";
 import  Admit from "./login/Admit.jsx"
 import Fees from "./login/Fees/Fees.jsx";
 import Assign from "./edit/Assign.jsx";
 import Editfees from "./feesform/Form.jsx"
-
+import Checking from "./check/Checking.jsx";
+import Notification from "./notification/Notification.jsx";
 
 
 //<Login data={getuserpass} />
@@ -40,7 +41,7 @@ imgi=img
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login /> } />
+          <Route path="/ss" element={<Login /> } />
           <Route path="/Home" element={<Home />} />
           <Route path="/tecHome" element={<ADhome/>} />
           <Route path="/adHome" element={<TEChome />} />
@@ -49,7 +50,9 @@ imgi=img
           <Route path="/Fees" element={<Fees  img1={imgfein1} /> } />
           <Route path="/assign" element={<Assign oppo={imgi}/> } />
           <Route path="/editfees" element={<Editfees  /> } />
-          <Route path="/candad" element={<Temp /> } />
+          <Route path="/candad" element={<StudentFees /> } />
+          <Route path="/Checking" element={<Checking /> } />
+          <Route path="/" element={<Notification /> } />
         </Routes>
       </BrowserRouter>
     </div>
