@@ -41,7 +41,7 @@ imgi=img
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/ss" element={<Login /> } />
+          <Route path="/" element={<Login /> } />
           <Route path="/Home" element={<Home />} />
           <Route path="/tecHome" element={<ADhome/>} />
           <Route path="/adHome" element={<TEChome />} />
@@ -52,7 +52,7 @@ imgi=img
           <Route path="/editfees" element={<Editfees  /> } />
           <Route path="/candad" element={<StudentFees /> } />
           <Route path="/Checking" element={<Checking /> } />
-          <Route path="/" element={<Notification /> } />
+          <Route path="/Notification" element={<Notification /> } />
         </Routes>
       </BrowserRouter>
     </div>

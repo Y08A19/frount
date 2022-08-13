@@ -3,22 +3,63 @@ import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import "./check.css";
 import pdf from "./q.pdf";
 export default function Checking() {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [numPages, setNumPages] = useState(null);//for geting page number of pdf
+  const [pageNumber, setPageNumber] = useState(1);//for current page number of pdf
   const [qnumPages, setqNumPages] = useState(null);
   const [qpageNumber, setqPageNumber] = useState(1);
-  const [azoom, asetzoom] = useState(3);
+  const [azoom, asetzoom] = useState(3);// for zoom
   const [qzoom, qsetzoom] = useState(0);
   const [isqshow, setisqshow] = useState(false);
   const [textbtn, settextbtn] = useState("show qustion paper");
 
-  function onDocumentLoadSuccess({ numPages }) {
+  const elements = [];//elements is use for store input fields id and also by using map method we add n number of input feild
+  let total=0
+  for(let i=0;i<=10;i++)
+  {
+    elements.push(i);//we add id in elements
+    console.log(i)
+  }
+
+function getnum(event ){
+  //this function is use for geting data from input fields and also restruct user to enter only number 
+document.getElementById(event.target.id).addEventListener("keyup", function (keyb) {
+  console.log(keyb)
+  if(keyb.keyCode===13)
+  
+  if(keyb.keyCode===13)
+  {
+    total=total+parseInt(event.target.value)// as user click enter data store for total 
+    console.log("enter")
+    console.log(total)
+    
+  }
+  if(keyb.keyCode>=65&& keyb.keyCode<=90)
+  {console.log("alpha")
+   // alert("you cant enter alpha numaric valu");
+    keyb.preventDefault();
+  }else{
+    total=total+parseInt(event.target.value)
+  }
+  if(parseInt(event.target.value)>19)
+  {
+    event.target.value=null;  // this if is use for restruct user to not enter more then max value 
+    console.log("bada h")
+  }
+ // 
+
+})
+ console.log(event.target.value)
+}
+
+
+
+  function onDocumentLoadSuccess({ numPages }) {// as page load this function called and this function set pager number
     setNumPages(numPages);
     setPageNumber(1);
   }
 
   const onazoom = (e) => {
-    asetzoom(e.target.value);
+    asetzoom(e.target.value); //taking data from seek bar
   };
   function onqDocumentLoadSuccess({ qnumPages }) {
     setqNumPages(qnumPages);
@@ -26,16 +67,17 @@ export default function Checking() {
   }
 
   function qfzoom() {
-    setisqshow(!isqshow);
+   
     if (isqshow === true) {
-      settextbtn("show qustion paper");
+      settextbtn("show answer paper");
       qsetzoom(4);
       asetzoom(-0);
     } else {
-      settextbtn("show answer paper");
+      settextbtn("show qustion paper");
       asetzoom(3);
       qsetzoom(-0);
     }
+    setisqshow(!isqshow);
     console.log(isqshow);
   }
 
@@ -82,36 +124,25 @@ export default function Checking() {
       </div>
       <div id="all">
         <div className="qustion-paper">
-          <Document file={pdf} onLoadSuccess={onqDocumentLoadSuccess}>
+          <Document file={pdf} onLoadSuccess={onqDocumentLoadSuccess}>{/* for qustion paper */}
             <Page width="200" scale={qzoom} pageNumber={qpageNumber} />
           </Document>
 
           <div className="answer-sheet">
-            <Document file="./semple.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+            <Document file="./semple.pdf" onLoadSuccess={onDocumentLoadSuccess}>{/* for answer paper */}
               <Page width="300" scale={azoom} pageNumber={pageNumber} />
             </Document>
           </div>
         </div>
 
         <div className="enternumber">
-          not attemted <input type="checkbox" name="" id="" />{" "}
-          <input type="text" />
-          <br />
-          not attemted <input type="checkbox" name="" id="" />{" "}
-          <input type="text" />
-          <br />
-          not attemted <input type="checkbox" name="" id="" />{" "}
-          <input type="text" />
-          <br />
-          not attemted <input type="checkbox" name="" id="" />{" "}
-          <input type="text" />
-          <br />
-          not attemted <input type="checkbox" name="" id="" />{" "}
-          <input type="text" />
-          <br />
-          not attemted <input type="checkbox" name="" id="" />{" "}
-          <input type="text" />
-          <br />
+        {elements.map((value, index) => {
+        return (<div key={index}>enter number <input type="text"onChange={getnum}  id={value} className='numberfield' />
+        <br />
+        </div>
+        )
+      })}
+
         </div>
       </div>
     </div>
